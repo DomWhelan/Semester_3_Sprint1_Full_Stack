@@ -12,14 +12,23 @@ globalThis.DEBUG = true;
 const fs = require("fs");
 const args = process.argv.slice(2);
 
-const { initApp } = require("./init.js");
+const { initDir, initFs } = require("./init.js");
 
 switch (args[0]) {
   case "init":
   case "i":
     if (DEBUG)
       console.log(`\napp.js Arguments: ${args}\napp.js Case: 'init' or 'i'\n`);
-    initApp();
+    if (args[1] === "--all") {
+      initDir();
+      initFs();
+    }
+    if (args[1] === "--dir") {
+      initDir();
+    }
+    if (args[1] === "--fs") {
+      initFs();
+    }
     break;
   case "config":
   case "c":

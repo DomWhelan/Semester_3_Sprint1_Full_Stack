@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DomWhelan/Semester_3_Sprint1_Full_Stack/issues"
   },
-  "homepage": "https://github.com/DomWhelan/Semester_3_Sprint1_Full_Stack#readme"
+  "homepage": "https://github.com/DomWhelan/Semester_3_Sprint1_Full_Stack#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }

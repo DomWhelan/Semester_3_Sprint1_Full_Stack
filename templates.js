@@ -4,8 +4,8 @@ app init <command>
 Usage:
 
 app init --all          creates the folder structure and config file
-app init --mk           creates the folder structure and add usage files
-app init --cat          creates the config file with default settings
+app init --dir          creates the folder structure
+app init --fs           creates the text files with default settings
 `;
 
 let configText = `
