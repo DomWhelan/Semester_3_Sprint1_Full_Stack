@@ -13,6 +13,7 @@ const fs = require("fs");
 const args = process.argv.slice(2);
 
 const { initDir, initFs } = require("./init.js");
+const { displayConfig, setConfig, resetConfig } = require("./config.js");
 
 switch (args[0]) {
   case "init":
@@ -36,6 +37,15 @@ switch (args[0]) {
       console.log(
         `\napp.js Arguments: ${args}\napp.js Case: 'config' or 'c'\n`
       );
+    if (args[1] === "--show") {
+      displayConfig();
+    }
+    if (args[1] === "--reset") {
+      resetConfig();
+    }
+    if (args[1] === "--set") {
+      setConfig();
+    }
     break;
   case "token":
   case "t":
