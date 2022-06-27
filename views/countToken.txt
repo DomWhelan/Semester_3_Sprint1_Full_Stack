@@ -1,0 +1,1 @@
+Current token count is 10.

@@ -1,0 +1,54 @@
+2022-06-27 - 00:06:47	countToken()	INFO	File: 'config.json' read successfully and token count provided
+2022-06-27 - 00:08:31	countToken()	INFO	File: 'config.json' read successfully and token count provided
+2022-06-27 - 00:09:21	countToken()	INFO	File: 'config.json' read successfully and token count provided
+2022-06-27 - 00:10:51	countToken()	INFO	File: 'config.json' read successfully and token count provided
+2022-06-27 - 00:33:59	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 00:34:45	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-27 - 00:34:55	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-27 - 09:20:46	newToken()	INFO	File: 'tokens.json' successfully updated
+2022-06-27 - 09:30:37	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 09:42:46	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 10:02:54	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 10:02:54	checkToken()	INFO	File: 'tokens.json' checked token expirary date of User: 'Bobby
+2022-06-27 - 10:02:54	checkToken()	WARN	File: 'tokens.json' Failed check token expirary date of User: Bobby
+2022-06-27 - 10:02:54	checkToken()	WARN	File: 'tokens.json' Failed check token expirary date of User: Bobby
+2022-06-27 - 10:02:54	checkToken()	WARN	File: 'tokens.json' Failed check token expirary date of User: Bobby
+2022-06-27 - 10:02:54	checkToken()	WARN	File: 'tokens.json' Failed check token expirary date of User: Bobby
+2022-06-27 - 10:02:54	checkToken()	WARN	File: 'tokens.json' Failed check token expirary date of User: Bobby
+2022-06-27 - 10:02:54	checkToken()	WARN	File: 'tokens.json' Failed check token expirary date of User: Bobby
+2022-06-27 - 10:02:54	checkToken()	WARN	File: 'tokens.json' Failed check token expirary date of User: Bobby
+2022-06-27 - 10:02:54	checkToken()	WARN	File: 'tokens.json' Failed check token expirary date of User: Bobby
+2022-06-27 - 10:12:24	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 10:12:24	checkToken()	INFO	File: 'tokens.json' checked token expirary date of User: 'Bobby
+2022-06-27 - 10:12:24	checkToken()	INFO	File: 'tokens.json' checked token expirary date of User: 'Bobby
+2022-06-27 - 10:13:50	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 10:13:50	checkToken()	INFO	File: 'tokens.json' checked token expirary date of User: 'Bobby
+2022-06-27 - 10:26:39	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 10:31:06	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 10:45:39	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-27 - 10:48:17	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-27 - 10:51:07	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 11:10:27	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-27 - 11:11:49	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-27 - 11:13:36	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-27 - 11:14:32	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-27 - 11:26:13	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 11:26:57	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 11:28:40	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-27 - 11:28:40	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-27 - 11:28:40	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-27 - 11:28:40	newToken()	INFO	File: 'tokens.json' successfully updated
+2022-06-27 - 11:28:40	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Chris' found
+2022-06-27 - 11:37:11	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Chris' found
+2022-06-27 - 11:37:11	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Chris' found
+2022-06-27 - 11:38:36	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Chris' found
+2022-06-27 - 13:05:27	countToken()	INFO	File: 'config.json' read successfully and token count provided
+2022-06-27 - 13:10:21	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-27 - 13:12:16	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 13:17:21	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-27 - 13:23:55	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Wesley' found
+2022-06-27 - 13:25:15	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Wesley' found
+2022-06-27 - 13:32:40	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 13:33:20	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-27 - 13:33:48	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Wilmer' found
+2022-06-27 - 13:36:44	countToken()	INFO	File: 'config.json' read successfully and token count provided

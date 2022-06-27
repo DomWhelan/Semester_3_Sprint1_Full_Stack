@@ -1,0 +1,67 @@
+2022-06-26 - 00:07:41	newToken()	INFO	File: 'tokens.json' successfully updated
+2022-06-26 - 00:21:43	newToken()	INFO	File: 'tokens.json' successfully updated
+2022-06-26 - 22:19:01	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 22:19:01	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 22:19:01	newToken()	INFO	File: 'tokens.json' successfully updated
+2022-06-26 - 22:22:39	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 22:22:39	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 22:23:57	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 22:23:57	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 22:29:18	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 22:30:22	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 22:32:05	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 22:32:59	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 22:34:22	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 22:36:13	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 22:37:46	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 22:37:46	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 22:38:54	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 22:38:54	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 22:42:07	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 22:42:07	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 22:43:58	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 22:46:48	newToken()	INFO	File: 'tokens.json' successfully updated
+2022-06-26 - 22:58:28	newToken()	INFO	File: 'tokens.json' successfully updated
+2022-06-26 - 22:58:28	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Wilmer' found
+2022-06-26 - 22:58:28	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 22:58:28	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:01:07	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:01:07	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:10:18	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:10:18	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:12:55	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 23:14:23	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:14:23	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:15:27	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:15:27	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:16:15	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:16:15	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:16:57	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 23:17:47	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:17:47	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:18:49	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:18:49	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:19:37	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:19:37	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:20:10	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:20:10	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:21:17	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:21:17	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:23:33	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:23:33	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:24:30	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:24:30	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-26 - 23:32:31	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 23:33:04	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 23:35:14	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 23:35:49	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 23:38:03	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 23:39:32	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 23:45:41	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 23:46:40	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 23:48:14	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 23:50:47	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 23:53:57	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-26 - 23:57:21	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-26 - 23:59:21	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-26 - 23:59:40	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found

@@ -7,13 +7,15 @@ Group 6
 
 */
 
-globalThis.DEBUG = true;
+global.DEBUG = false;
 
 const fs = require("fs");
 const args = process.argv.slice(2);
 
 const { initDir, initFs } = require("./init.js");
 const { displayConfig, setConfig, resetConfig } = require("./config.js");
+const { configText, initText, tokenText } = require("./templates.js");
+const { newToken, countToken, findUser } = require("./token");
 
 switch (args[0]) {
   case "init":
@@ -29,6 +31,9 @@ switch (args[0]) {
     }
     if (args[1] === "--fs") {
       initFs();
+    }
+    if (args[1] === "--help" || args[1] === "--h" || args[1] === undefined) {
+      console.log(initText);
     }
     break;
   case "config":
@@ -46,21 +51,37 @@ switch (args[0]) {
     if (args[1] === "--set") {
       setConfig();
     }
+    if (args[1] === "--help" || args[1] === "--h" || args[1] === undefined) {
+      console.log(configText);
+    }
     break;
   case "token":
   case "t":
     if (DEBUG)
       console.log(`\napp.js Arguments: ${args}\napp.js Case: 'token' or 't'\n`);
+    if (args[1] === "--count") {
+      countToken();
+    }
+    if (args[1] === "--new") {
+      console.log(newToken(args[2]));
+    }
+    if (args[1] === "--findUser") {
+      findUser(args[2]);
+    }
+    if (args[1] === "--help" || args[1] === "--h" || args[1] === undefined) {
+      console.log(tokenText);
+    }
     break;
   case "help":
   case "h":
     if (DEBUG)
       console.log(`\napp.js Arguments: ${args}\napp.js Case: 'help' or 'h'\n`);
+
+    console.log(initText);
+    console.log(configText);
+    console.log(tokenText);
     break;
   default:
-    if (DEBUG) console.log(`Arguments: ${args}\n Case: 'default'`);
-  // fs.readFile(__dirname + "/usage.txt", (error, data) => {
-  //     if(error) throw error;
-  //     console.log(data.toString());
-  // });
+    if (DEBUG) console.log(`\nArguments: ${args}\nCase: 'default'\n`);
+    console.log('Use the "--help" or "--h" to view available commands\n');
 }

@@ -3,31 +3,15 @@ const args = process.argv.slice(2);
 const path = require("path");
 
 const { initText, configText, tokenText } = require("./templates");
+const { logEvent } = require("./logger.js");
 
 const Emitter = require("events");
 class MyEmitter extends Emitter {}
+const myEmitter = new MyEmitter();
 
-// The main init function that calls helper functions based on the argument following init
-// function initApp() {
-//   if (DEBUG) console.log("initApp function called");
-//   switch (args[1]) {
-//     case "--all":
-//       if (DEBUG) console.log(`Arguments: ${args}\nCase: init --all\n`);
-//       initDir();
-//       initFs();
-//       break;
-//     case "--dir":
-//       if (DEBUG) console.log(`Arguments: ${args}\nCase: init --dir\n`);
-//       initDir();
-//       break;
-//     case "--fs":
-//       if (DEBUG) console.log(`Arguments: ${args}\nCase: init --fs\n`);
-//       initFs();
-//       break;
-//     default:
-//       if (DEBUG) console.log(`Arguments: ${args}\nCase: init default\n`);
-//   }
-// }
+myEmitter.addListener("log", (event, type, message) =>
+  logEvent(event, type, message)
+);
 
 function writeFile(filename, text) {
   fs.writeFile(path.join(__dirname, "views", filename), text, (err) => {
@@ -46,6 +30,7 @@ function initFs() {
     writeFile("init.txt", initText);
     writeFile("config.txt", configText);
     writeFile("token.txt", tokenText);
+    myEmitter.emit("log", "initFs()", "INFO", "Help display files initialized");
   }
 }
 
@@ -66,8 +51,21 @@ function dirCheck(dir) {
 function initDir() {
   if (DEBUG) console.log("initDir Function called");
   if (dirCheck("./views") === true) {
+    console.log('Directory "./views" already exists');
+    myEmitter.emit(
+      "log",
+      "initDir()",
+      "WARN",
+      "Directory '/views' already exists"
+    );
   } else {
     mkDir("views");
+    myEmitter.emit(
+      "log",
+      "initDir()",
+      "INFO",
+      "Directory '/views' created successfully"
+    );
   }
 }
 

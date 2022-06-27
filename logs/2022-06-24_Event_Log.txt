@@ -1,0 +1,5 @@
+2022-06-24 - 10:19:32	initFs()	INFO	Help display files initialized
+2022-06-24 - 11:07:31	setConfig()	INFO	File: 'config.json' was successfully updated
+2022-06-24 - 11:13:55	setConfig()	INFO	File: 'config.json' was successfully updated
+2022-06-24 - 12:07:14	newToken()	INFO	File: 'tokens.json' successfully updated
+2022-06-24 - 12:07:49	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
