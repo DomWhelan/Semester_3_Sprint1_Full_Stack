@@ -5,20 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <style>
+      header {
+        display: flex;
+        justify-content: space-around;
+        font-size: 2rem;
+        background-color: black;
+        color: aliceblue;
+        margin: 0%;
+        padding: 2%;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(208, 208, 208);
+        text-align: center;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <h2>Get a new token here. Just enter a user name</h2>
+    <header>
+      <span>Keyin College</span>
+      <span>Semester 3 Sprint 1 - Full Stack Javascript</span>
+      <span>Team 6</span>
+    </header>
+    <h3>Get a new token here. Just enter a user name</h3>
     <form action="newUser" method="GET">
       <label for="username">User Name:</label>
       <input type="text" name="username" value="username" required />
       <input type="submit" value="submit" />
     </form>
-    <h2>Find the latest token for a specific user</h2>
+    <h3>Find the latest token for a specific user</h3>
     <form action="findUser" method="GET">
       <label for="username">User Name:</label>
       <input type="text" name="username" value="username" required />
       <input type="submit" value="submit" />
     </form>
+    <h3>Veiw a current count of tokens</h3>
     <form action="countToken" method="GET">
       <label for="count">Get Token Count</label>
       <input type="submit" value="Count" />

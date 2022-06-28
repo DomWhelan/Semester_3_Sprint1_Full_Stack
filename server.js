@@ -54,7 +54,7 @@ app.use((req, res) => {
 
 //Create the server
 //specify a port fro the app to listen
-const server = app.listen(8888, function () {
+const server = app.listen(3000, function () {
   const port = server.address().port;
   console.log("Web app listening at port: ", port);
 });

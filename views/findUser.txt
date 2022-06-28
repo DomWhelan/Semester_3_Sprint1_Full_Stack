@@ -1,1 +1,2 @@
-{"created":"2022/06/26 22:58:28","username":"Wilmer","email":"user@example.com","phone":"1234567890","token":"a31513ea","expires":"2022/06/28 22:58:28"}
+{"created":"2022/06/22 14:20:39","username":"Bobby","email":"user@example.com","phone":"1234567890","token":"b215c492","expires":"2022/06/24 14:20:39"}
+The token for Bobby expired 2022/06/24 14:20:39

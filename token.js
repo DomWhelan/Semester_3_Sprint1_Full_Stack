@@ -1,6 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 
+const args = process.argv.slice(2);
+
 const crc32 = require("crc/crc32");
 
 const date = require("date-and-time");
@@ -80,7 +82,7 @@ function newToken(username) {
     let tokens = JSON.parse(data);
 
     tokens.push(newToken);
-    userTokens = JSON.stringify(tokens);
+    let userTokens = JSON.stringify(tokens);
 
     fs.writeFile(__dirname + "/tokens.json", userTokens, (err) => {
       if (err) {
@@ -125,6 +127,7 @@ function findUser(user) {
         }
       });
       writeFile("findUser.txt", JSON.stringify(result));
+      isExp(user);
     } else {
       console.log(err);
       myEmitter.emit(
@@ -137,6 +140,79 @@ function findUser(user) {
   });
 }
 
+function setToken(user) {
+  if (DEBUG) console.log("Token.setToken()");
+  if (DEBUG) console.log(args);
+  const att = args[3];
+  const val = args[4];
+  let match = false;
+  fs.readFile(__dirname + "/tokens.json", (error, data) => {
+    if (error) {
+      myEmitter.emit(
+        "log",
+        "setToken()",
+        "ERROR",
+        "File: 'tokens.json' could not be read"
+      );
+      throw error;
+    }
+    let tokens = JSON.parse(data);
+    if (DEBUG) console.log(tokens);
+    tokens.forEach((token) => {
+      if (token.username === user) {
+        token[att] = val;
+        match = true;
+      }
+      if (!match) {
+        console.log(`invalid key: ${args[2]}, try another.`);
+        myEmitter.emit(
+          "log",
+          "setToken()",
+          "WARN",
+          `File: 'tokens.json' invalid key: ${args[2]}`
+        );
+      }
+    });
+    // for (let key of Object.keys(tokens)) {
+    //   if (key === user) {
+    //     tokens[args[3]] = args[4];
+    //     match = true;
+    //   }
+    //   if (!match) {
+    //     console.log(`invalid key: ${args[2]}, try another.`);
+    //     myEmitter.emit(
+    //       "log",
+    //       "setToken()",
+    //       "WARN",
+    //       `File: 'tokens.json' invalid key: ${args[2]}`
+    //     );
+    //   }
+    // }
+    if (DEBUG) console.log(tokens);
+    data = JSON.stringify(tokens, null, 2);
+    fs.writeFile(__dirname + "/tokens.json", data, (error) => {
+      if (error) {
+        myEmitter.emit(
+          "log",
+          "setToken()",
+          "ERROR",
+          "File: 'tokens.json' write Failure"
+        );
+        throw error;
+      }
+      console.log(
+        `Token successfully updated. User: ${user} Attribute: ${args[3]} Value: ${args[4]}`
+      );
+      myEmitter.emit(
+        "log",
+        "setToken()",
+        "INFO",
+        `File: 'tokens.json' Token successfully updated User: ${user} Attribute: ${args[3]} Value: ${args[4]}`
+      );
+    });
+  });
+}
+
 function isExp(user) {
   fs.readFile(__dirname + "/tokens.json", (err, data) => {
     let result = `User: ${user} could not be found`;
@@ -145,16 +221,31 @@ function isExp(user) {
       tokens.forEach((token) => {
         if (token.username === user) {
           result = token.expires;
-          myEmitter.emit(
-            "log",
-            "checkToken()",
-            "INFO",
-            "File: 'tokens.json' checked token expirary date of User: '" + user
-          );
         }
       });
       console.log(result);
-      return result;
+      if (result < now) {
+        console.log(`The token for ${user} expired ${result}`);
+        myEmitter.emit(
+          "log",
+          "checkToken()",
+          "WARN",
+          "File: 'tokens.json' checked token expired for User: " + user
+        );
+        appendFile("findUser.txt", `\nThe token for ${user} expired ${result}`);
+      } else {
+        console.log(`The token for ${user} is valid to ${result}`);
+        myEmitter.emit(
+          "log",
+          "checkToken()",
+          "INFO",
+          "File: 'tokens.json' checked token expirary date of User: '" + user
+        );
+        appendFile(
+          "findUser.txt",
+          `\nThe token for ${user} is valid to ${result}`
+        );
+      }
     } else {
       console.log(err);
       myEmitter.emit(
@@ -172,9 +263,17 @@ function writeFile(filename, text) {
     else if (DEBUG) console.log(`Filename: ${filename} created`);
   });
 }
+function appendFile(filename, text) {
+  fs.appendFile(path.join(__dirname, "views", filename), text, (err) => {
+    if (err) console.log(err);
+    else if (DEBUG) console.log(`Filename: ${filename} appended`);
+  });
+}
 
 module.exports = {
   newToken,
   countToken,
   findUser,
+  setToken,
+  isExp,
 };

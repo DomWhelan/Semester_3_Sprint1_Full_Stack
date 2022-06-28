@@ -13,9 +13,14 @@ const fs = require("fs");
 const args = process.argv.slice(2);
 
 const { initDir, initFs } = require("./init.js");
-const { displayConfig, setConfig, resetConfig } = require("./config.js");
+const {
+  displayConfig,
+  setConfig,
+  resetConfig,
+  addConfig,
+} = require("./config.js");
 const { configText, initText, tokenText } = require("./templates.js");
-const { newToken, countToken, findUser } = require("./token");
+const { newToken, countToken, findUser, setToken, isExp } = require("./token");
 
 switch (args[0]) {
   case "init":
@@ -51,6 +56,9 @@ switch (args[0]) {
     if (args[1] === "--set") {
       setConfig();
     }
+    if (args[1] === "--add") {
+      addConfig();
+    }
     if (args[1] === "--help" || args[1] === "--h" || args[1] === undefined) {
       console.log(configText);
     }
@@ -67,6 +75,10 @@ switch (args[0]) {
     }
     if (args[1] === "--findUser") {
       findUser(args[2]);
+      isExp(args[2]);
+    }
+    if (args[1] === "--set") {
+      setToken(args[2]);
     }
     if (args[1] === "--help" || args[1] === "--h" || args[1] === undefined) {
       console.log(tokenText);

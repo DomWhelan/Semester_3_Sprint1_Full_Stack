@@ -59,9 +59,15 @@ function setConfig() {
         cfg[key] = args[3];
         match = true;
       }
-    }
-    if (!match) {
-      console.log(`invalid key: ${args[2]}, try another.`);
+      if (!match) {
+        console.log(`invalid key: ${args[2]}, try another.`);
+        myEmitter.emit(
+          "log",
+          "setConfig()",
+          "WARN",
+          `File: 'config.json' invalid key: ${args[2]}`
+        );
+      }
     }
     if (DEBUG) console.log(cfg);
     data = JSON.stringify(cfg, null, 2);
@@ -75,7 +81,7 @@ function setConfig() {
         );
         throw error;
       }
-      if (DEBUG) console.log("Config file successfully updated.");
+      console.log("Config file successfully updated.");
       myEmitter.emit(
         "log",
         "setConfig()",
@@ -86,6 +92,43 @@ function setConfig() {
   });
 }
 
+function addConfig() {
+  if (DEBUG) console.log("config.setConfig()");
+  if (DEBUG) console.log(args);
+  fs.readFile(__dirname + "/config.json", (error, data) => {
+    if (error) {
+      myEmitter.emit(
+        "log",
+        "setConfig()",
+        "ERROR",
+        "File: 'config.json' could not be read"
+      );
+      throw error;
+    }
+    if (DEBUG) console.log(JSON.parse(data));
+    let cfg = JSON.parse(data);
+    cfg[args[2]] = args[3];
+    data = JSON.stringify(cfg);
+    fs.writeFile(__dirname + "/config.json", data, (error) => {
+      if (error) {
+        myEmitter.emit(
+          "log",
+          "addConfig()",
+          "ERROR",
+          "File: 'config.json' could not be updated"
+        );
+        throw error;
+      }
+      if (DEBUG) console.log("Config file successfully updated.");
+      myEmitter.emit(
+        "log",
+        "addConfig()",
+        "INFO",
+        "File: 'config.json' was successfully updated"
+      );
+    });
+  });
+}
 function resetConfig() {
   if (DEBUG) console.log("resetConfig Function called");
   let configdata = JSON.stringify(configJson, null, 2);
@@ -113,4 +156,5 @@ module.exports = {
   displayConfig,
   setConfig,
   resetConfig,
+  addConfig,
 };

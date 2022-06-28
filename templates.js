@@ -17,6 +17,7 @@ Usage:
 app config --show                 displays a list of the current config settings
 app config --reset                resets the config file with default settings
 app config --set <name> <value>   sets a specific config setting
+app config --add <name> <value>   add new attribute to config settings
 
 `;
 
@@ -25,9 +26,10 @@ app token <command>
 
 Usage:
 
-app token --count                displays a count of the tokens created
-app token --new <username>       generates a token for a given username, saves tokens to the json file
-app token --findUser <username>  fetches a token for a given username
+app token --count                             displays a count of the tokens created
+app token --new <username>                    generates a token for a given username, saves tokens to the json file
+app token --set <user> <attribute> <value>    assign an attribute for a user with a given value
+app token --findUser <username>               fetches a token for a given username
 
 `;
 

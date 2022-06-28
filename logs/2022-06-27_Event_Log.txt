@@ -52,3 +52,62 @@
 2022-06-27 - 13:33:20	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
 2022-06-27 - 13:33:48	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Wilmer' found
 2022-06-27 - 13:36:44	countToken()	INFO	File: 'config.json' read successfully and token count provided
+2022-06-27 - 13:55:59	countToken()	INFO	File: 'config.json' read successfully and token count provided
+2022-06-27 - 13:55:59	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-27 - 13:55:59	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-27 - 13:55:59	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Fred' found
+2022-06-27 - 14:29:05	checkToken()	INFO	File: 'tokens.json' checked token expirary date of User: 'Bobby
+2022-06-27 - 14:44:40	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Dominic' found
+2022-06-27 - 14:44:40	checkToken()	WARN	File: 'tokens.json' checked token expired for User: 'Dominic
+2022-06-27 - 14:47:15	newToken()	INFO	File: 'tokens.json' successfully updated
+2022-06-27 - 14:47:15	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Chris' found
+2022-06-27 - 14:47:15	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Chris' found
+2022-06-27 - 14:49:56	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Chris' found
+2022-06-27 - 14:49:56	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Chris' found
+2022-06-27 - 14:51:17	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 14:56:51	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 14:58:35	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 15:00:09	findUser()	INFO	File: 'tokens.json' successfully read, User: 'Bobby' found
+2022-06-27 - 15:00:09	checkToken()	WARN	File: 'tokens.json' checked token expired for User: 'Bobby
+2022-06-27 - 15:13:25	setConfig()	INFO	File: 'config.json' was successfully updated
+2022-06-27 - 15:32:48	addConfig()	INFO	File: 'config.json' was successfully updated
+2022-06-27 - 21:40:17	setConfig()	INFO	File: 'config.json' was successfully updated
+2022-06-27 - 21:44:26	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:44:26	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:44:26	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:44:26	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:44:26	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:44:26	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:44:26	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:44:26	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:44:26	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:44:26	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:44:26	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:44:26	setToken()	INFO	File: 'tokens.json' Token successfully updated User: Dominic Attribute: Dominic Value: phone
+2022-06-27 - 21:50:32	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:50:32	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:50:32	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:50:32	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:50:32	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:50:32	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:50:32	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:50:32	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:50:32	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:50:32	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:50:32	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 21:50:32	setToken()	INFO	File: 'tokens.json' Token successfully updated User: Dominic Attribute: phone Value: 17095679347
+2022-06-27 - 22:02:15	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 22:02:15	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 22:02:15	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 22:02:15	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 22:02:15	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 22:02:15	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 22:02:15	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 22:02:15	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 22:02:15	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 22:02:15	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 22:02:15	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 22:02:15	setToken()	INFO	File: 'tokens.json' Token successfully updated User: Dominic Attribute: phone Value: 17095679347
+2022-06-27 - 22:09:33	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 22:09:33	setToken()	WARN	File: 'tokens.json' invalid key: Dominic
+2022-06-27 - 22:09:33	setToken()	INFO	File: 'tokens.json' Token successfully updated User: Dominic Attribute: phone Value: 17095679347
